@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "PictureInfoModel.h"
 
-@interface ViewController ()
+@interface ViewController () <UIAlertViewDelegate,UIActionSheetDelegate>
 /**
  *  成绩
  */
@@ -138,6 +138,29 @@
 }
 
 -(IBAction)nextPicture{
+    //判断是否是最后一题
+    if (self.index == self.pictureArray.count - 1) {
+        
+        //从底部弹窗
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"恭喜通关！" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"确定" otherButtonTitles:@"其他", nil];
+        [actionSheet showInView:self.view];
+        
+        /**
+         delegate:self表明用当前controller做代理，来监听alertView，该controller要实现UIAlertViewDelegate协议，可以实现该协议内的方法对alertView的监听；
+        //屏幕中间弹框
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"恭喜通关！" message:@"敬请期待，后续更新！" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        alertView.tag = 10;
+        [alertView show];
+         
+
+        //第二个弹窗，用tag区别弹窗
+        UIAlertView *alertView2 = [[UIAlertView alloc] initWithTitle:@"恭喜通关！" message:@"敬请期待，后续更新！" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        alertView2.tag = 20;
+        [alertView2 show];
+         */
+        return;
+    }
+    
     self.index++;
     //根据index获取对应的数据模型
     PictureInfoModel *pictureInfo = self.pictureArray[self.index];
@@ -157,6 +180,23 @@
     [self addOptionBtn:pictureInfo];
 
 }
+/**
+ *  监听“取消”按钮
+ */
+-(void)actionSheetCancel:(UIActionSheet *)actionSheet{
+    NSLog(@"监听取消按钮");
+}
+
+/**
+ *  实现UIAlertViewDelegate的该方法，可以对过按钮监听
+ */
+//-(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+//    if (alertView.tag == 10) {
+//        NSLog(@"监听第一个按钮");
+//    }else if(alertView.tag == 20){
+//        NSLog(@"监听第二个按钮");
+//    }
+//}
 /**
  * 添加待选项
  */

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69BCC76B-F2B9-424E-9B7A-2F05E57B8222</string>
+	<key>IDESourceControlProjectName</key>
+	<string>0327_超级猜图</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>273877C305311A14554894B11230065D992F9598</key>
+		<string>github.com:lechen/IOS-GuessPicture.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>0327_超级猜图.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>273877C305311A14554894B11230065D992F9598</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:lechen/IOS-GuessPicture.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>273877C305311A14554894B11230065D992F9598</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>273877C305311A14554894B11230065D992F9598</string>
+			<key>IDESourceControlWCCName</key>
+			<string>0327_%E8%B6%85%E7%BA%A7%E7%8C%9C%E5%9B%BE</string>
+		</dict>
+	</array>
+</dict>
+</plist>
